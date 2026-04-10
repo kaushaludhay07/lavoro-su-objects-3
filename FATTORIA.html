@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Gioco della fattoria</title>
+</head>
+<body>
+
+    <div id="fattoria-menu">
+        <h1>Benvenuto nella Fattoria!</h1>
+        <p>Scegli un animale per vedere la sua scheda:</p>
+        <img src="/img/FATTORIA.jpg">
+        <br><br>
+        <button onclick="apriSchedaAnimale(0)">Scopri la Mucca</button>
+        <button onclick="apriSchedaAnimale(1)">Scopri il Cane</button>
+        <button onclick="apriSchedaAnimale(2)">Scopri la Gallina</button>
+    </div>
+
+    <div id="scheda-animale" style="display:none;">
+        <h2 id="titolo-animale"></h2>
+       
+        
+       
+        <p id="descrizione-animale"></p>
+
+        <button onclick="tornaAllaFattoria()">Torna alla Fattoria</button>
+    </div>
+
+    <script src="fattoria.js"></script>
+</body>
+</html>
